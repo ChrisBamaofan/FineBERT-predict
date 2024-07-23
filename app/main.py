@@ -7,12 +7,6 @@ import torch
 
 app = Flask(__name__)
 
-# 加载模型和相关组件
-# model = load_model('saved_models/model.pth', 'saved_models/positive_mlb.pkl', 'saved_models/negative_mlb.pkl', 'saved_models/label_type_mlb.pkl')
-# tokenizer = BertTokenizer.from_pretrained('saved_models')
-# positive_mlb = joblib.load('saved_models/positive_mlb.pkl')
-# negative_mlb = joblib.load('saved_models/negative_mlb.pkl')
-# label_type_mlb = joblib.load('saved_models/label_type_mlb.pkl')
 local_model_path = "D:/workspace/llm/FinBERT_L-12_H-768_A-12_pytorch"
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 positive_mlb = joblib.load('saved_models/positive_mlb.pkl')

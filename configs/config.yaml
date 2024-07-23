@@ -1,0 +1,15 @@
+model:
+  local_model_path: "D:\\workspace\\llm\\FinBERT_L-12_H-768_A-12_pytorch"
+
+training:
+  batch_size: 16
+  epochs: 5
+  learning_rate: 2e-5
+  max_len: 128
+
+data:
+  train_file: "../trainDataset/train.txt"
+  test_file: "../trainDataset/test.txt"
+
+paths:
+  save_dir: "saved_models"

@@ -1,0 +1,11 @@
+/.idea
+/saved_models
+/saved_models_v1
+/datasets
+/__pycache__
+
+pytorch_model.bin
+vocab.txt
+config.json
+*.arrow
+*.pyc
